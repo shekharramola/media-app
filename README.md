@@ -6,8 +6,8 @@ Steps to make it running:
 
 1. Install nodejs
 2. Install npm
-3.then go to the project root directory(for example cd ShekharRamola_Movie_Beatroute/movieApp)
-4. when you went inside movieApp directory then type command "npm update"
+3.then go to the project root directory
+4. when you went inside mediaApp directory then type command "npm update"
 
 ## Development server
 
