@@ -8,7 +8,7 @@ Steps to make it running:
 
 2. Install npm
 
-3.then go to the project root directory
+ 3.then go to the project root directory
 
 4. when you went inside mediaApp directory then type command "npm update"
 
