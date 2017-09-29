@@ -5,8 +5,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Steps to make it running:
 
 1. Install nodejs
+
 2. Install npm
+
 3.then go to the project root directory
+
 4. when you went inside mediaApp directory then type command "npm update"
 
 ## Development server
