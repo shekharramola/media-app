@@ -1,0 +1,23 @@
+@media (max-width: 62em) {
+    .footer-bottom {
+        background: #3d6277;
+        padding: 0;
+        float: left;
+        font-size: 1px;
+    }
+}
+.subnavigation-container {
+    background: #00FFFF;
+    padding: 1em;
+}
+.subnavigation .nav-link {
+    color: white;
+    font-weight: bold;
+}
+.subnavigation-container {
+    text-align: center;
+}
+.subnavigation-container .navbar {
+    display: inline-block;
+    margin-bottom: -6px;
+}

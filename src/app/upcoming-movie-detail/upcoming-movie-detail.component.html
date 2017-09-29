@@ -1,0 +1,47 @@
+<md-tab-group *ngIf= "upcomingMovies">
+   <md-tab label="Description">
+      <div class="container-fluid">
+         <div style="position: relative;">
+            <img src="{{upcomingMovies.cover}}" alt="{{upcomingMovies.name}}" class="cover-image" />
+            <img src="{{upcomingMovies.img}}" class="img-fluid" alt="{{upcomingMovies.name}}" class="profile" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/600px_White_star_on_Black_background.svg/2000px-600px_White_star_on_Black_background.svg.png" class="img-fluid" id="star" width="100" height="300" />
+            <span class="rate">
+               <h1>{{upcomingMovies.rate}}</h1>
+            </span>
+            <span class="genres">{{upcomingMovies.genres}}</span>
+            <span class="theaters">{{upcomingMovies.theaters}}</span>
+         </div>
+      </div>
+      <br>
+      <div class="container-fluid">
+         <article class="article">{{upcomingMovies.description}}</article>
+      </div>
+      <br>
+      <div class="container-fluid">
+         <div class="col xs-12 col-md-12 col-sm-12">
+            <div class="left"><b>Production Company:</b><span>{{upcomingMovies.productionCompany}}</span></div>
+            <div class="left"><b>Director:</b><span>{{upcomingMovies.director}}</span></div>
+            <div class="left"><b>Release Date:</b><span>{{upcomingMovies.initialRelease}}</span></div>
+            <div class="left"><b>Music Director:</b><span>{{upcomingMovies.musicDirector}}</span></div>
+            <div class="left"><b>Duration:</b><span>{{upcomingMovies.length}}</span></div>
+         </div>
+         <div class="col xs-12 col-md-12 col-sm-12">
+         </div>
+      </div>
+   </md-tab>
+   <md-tab label="Movie Cast">
+      <div class="container-fluid">
+         <ul class="list-group">
+            <li class="list-group-item
+               list-group-item-info text-center"
+               *ngFor="let item of cast"
+               >{{item}}</li>
+         </ul>
+      </div>
+   </md-tab>
+   <md-tab label="User Review">
+      <div class="container-fluid">
+         <h6>No Review</h6>
+      </div>
+   </md-tab>
+</md-tab-group>

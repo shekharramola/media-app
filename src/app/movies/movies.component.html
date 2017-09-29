@@ -1,0 +1,30 @@
+<app-header></app-header>
+<br>
+<div class="container-fluid">
+   <div class="search">
+      <input type="text" class="form-control" name="search box" placeholder= "search by movie name..." [(ngModel)]="movieName"> 
+   </div>
+   <br>
+   <div class="row">
+      <button type="button" class="btn btn-info btn-sm">
+         <h6 class="vertical">Released</h6>
+      </button>
+      <div class="list-group col-xs-2 col-md-2 col-sm-2" *ngFor="let movie of movies|search:movieName;">
+         <button type="button" (click)="detail(movie.id)" class="list-group-item list-group-item-action" >
+            <div class="image">
+               <img src={{movie.img}} class="img-fluid" id="first-row" width="250px" height="250px" />
+               <h2><span class='spacer'>{{movie.name}}</span> </h2>
+               <span class="font-size">{{movie.genres}}</span>
+               <div class= "rating" >
+                  <img src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Actions-rating-icon.png" class="img-fluid" height=20 width=20/>
+                  <span><strong>{{movie.rate}}</strong></span>
+               </div>
+            </div>
+         </button>
+      </div>
+   </div>
+   <app-upcoming-movies [movieName]="movieName"></app-upcoming-movies>
+</div>
+<br>
+<app-events></app-events>
+<app-footer></app-footer>

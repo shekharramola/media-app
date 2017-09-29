@@ -1,0 +1,76 @@
+b {
+    font-weight: 20px;
+    color: grey;
+}
+.list-group-item {
+    width: 50%;
+}
+img {
+    position: relative;
+}
+.cover-image {
+    position: absolute;
+    width: 1200px;
+    height: 400px;
+    padding-left: 70px;
+    padding-top: 20px;
+    z-index: 1
+}
+h3 {
+    text-align: center;
+}
+.left {
+    padding-left: 170px;
+    letter-spacing: 2px;
+}
+h1 {
+    font-size: 65px;
+}
+.right {
+    padding-right: 180px;
+}
+.article {
+    padding-top: 580px;
+    width: 900px;
+    padding-left: 180px;
+    letter-spacing: 2px;
+}
+.genres {
+    position: absolute;
+    color: white;
+    background: black;
+    top: 370px;
+    left: 870px;
+    z-index: 100;
+}
+.theaters {
+    position: absolute;
+    background: black;
+    color: white;
+    top: 370px;
+    left: 1099px;
+    z-index: 100;
+}
+.profile {
+    z-index: 3;
+    position: absolute;
+    padding-top: 300px;
+    padding-left: 180px;
+    padding-bottom: 250px;
+}
+#star {
+    color: white;
+    position: absolute;
+    top: 332px;
+    left: 500px;
+    z-index: 100;
+}
+.rate {
+    height: 68px;
+    position: absolute;
+    color: white;
+    background: black;
+    top: 332px;
+    left: 600px;
+    z-index: 100;
+}
